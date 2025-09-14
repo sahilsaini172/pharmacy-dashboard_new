@@ -54,7 +54,7 @@ interface BarXAxisProps {
 
 export function BarXAxis({ data }: BarXAxisProps) {
   return (
-    <div id="bars" className="flex gap-2 overflow-x-scroll overflow-visible">
+    <div id="bars" className="flex gap-2 overflow-x-scroll overflow-visible hide-scrollbar">
       {data.map((item) => {
         return <Bar key={item.id} id={item.id} value={item.value} />;
       })}

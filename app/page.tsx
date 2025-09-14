@@ -1,6 +1,7 @@
 import BarChart from "./ui/BarChart";
 import InfoCard from "./ui/InfoCard";
 import MedicineBarChart from "./ui/MedicineBarChart";
+import Table from "./ui/Table";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </div>
       <BarChart />
       <MedicineBarChart/>
+      <Table/>
     </div>
   );
 }

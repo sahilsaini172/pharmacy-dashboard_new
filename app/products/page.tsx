@@ -1,3 +1,3 @@
 export default function Products() {
-    return <h2>Products</h2>
+  return <div className="min-h-screen flex flex-col gap-4 py-4"></div>;
 }

@@ -1,9 +1,6 @@
 import {
   CircleDollarSign,
-  DollarSign,
-  Ellipsis,
   EllipsisVertical,
-  TrendingDown,
   TrendingUp,
 } from "lucide-react";
 
