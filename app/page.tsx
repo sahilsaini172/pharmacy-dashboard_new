@@ -1,5 +1,5 @@
 import BarChart from "./ui/BarChart";
-import InfoCard from "./ui/InfoCard";
+import InfoCard from "./ui/Cards";
 import MedicineBarChart from "./ui/MedicineBarChart";
 import Table from "./ui/Table";
 
