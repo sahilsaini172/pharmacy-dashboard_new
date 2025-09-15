@@ -1,7 +1,7 @@
 import {
-  ChevronLast,
   ChevronLeft,
   ChevronRight,
+  Ellipsis,
   EyeIcon,
   Plus,
   Search,
@@ -167,7 +167,7 @@ export function OrderTable() {
             <td className="w-[200px]">Order ID</td>
             <td className="w-[200px]">Customer Name</td>
             <td className="w-[200px]">Product Ordered</td>
-            <td className="w-[200px]">Totla Amount</td>
+            <td className="w-[200px]">Total Amount</td>
             <td className="w-[200px]">Payment Status</td>
             <td className="w-[200px]">Order Status</td>
             <td className="w-[200px]">Action</td>
@@ -256,16 +256,14 @@ export function RecentOrderTable() {
         <table className="flex flex-col mt-4 ">
           <tr className="flex gap-2 justify-between text-left font-medium w-max *:text-nowrap p-4 rounded-lg bg-tertiary-100 text-tertiary-500">
             <td className="w-[200px]">Order ID</td>
-            <td className="w-[200px]">Customer Name</td>
-            <td className="w-[200px]">Product Ordered</td>
-            <td className="w-[200px]">Totla Amount</td>
-            <td className="w-[200px]">Payment Status</td>
+            <td className="w-[200px]">Medicine Name</td>
+            <td className="w-[200px]">Price</td>
             <td className="w-[200px]">Order Status</td>
+            <td className="w-[200px]">Payment Status</td>
             <td className="w-[200px]">Action</td>
           </tr>
           <tr className="flex gap-2 justify-between items-center text-left w-max *:text-nowrap p-4">
             <td className="w-[200px]">#ORD001</td>
-            <td className="w-[200px]">John Doe</td>
             <td className="w-[200px]">
               Paracetamol(2)
               <br />
@@ -274,18 +272,16 @@ export function RecentOrderTable() {
             <td className="w-[200px]">$25.40</td>
             <td className="w-[200px]">
               <span className="inline-block bg-green-100 text-green-600 px-2 rounded-full">
-                Paid
+                Completed
               </span>
             </td>
             <td className="w-[200px]">
               <span className="inline-block bg-green-100 text-green-600 px-2 rounded-full">
-                Completed
+                Paid
               </span>
             </td>
             <td className="flex w-[200px] gap-4 items-center">
-              <EyeIcon size={24} />
-              <Trash2 size={24} />
-              <SquareArrowOutUpRight size={24} />
+              <Ellipsis size={24} />
             </td>
           </tr>
         </table>

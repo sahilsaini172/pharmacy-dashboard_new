@@ -1,6 +1,8 @@
 import BarChart from "../ui/BarChart";
 import { SalesCard } from "../ui/Cards";
+import List from "../ui/List";
 import OBTChart from "../ui/OBTChart";
+import { RecentOrderTable } from "../ui/Table";
 
 export default function Sales() {
   return (
@@ -14,6 +16,8 @@ export default function Sales() {
       </div>
       <BarChart/>
       <OBTChart/>
+      <RecentOrderTable/>
+      <List/>
     </div>
   );
 }
