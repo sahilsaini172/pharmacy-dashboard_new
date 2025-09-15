@@ -96,3 +96,44 @@ export function ProductCard() {
     </div>
   );
 }
+
+export function OrderCard() {
+  return (
+    <div className="flex flex-col w-2/3 rounded-xl bg-secondary-500 p-4 text-white">
+      <div className="flex items-center justify-between mb-8 gap-8">
+        <span className="flex gap-1 items-center text-sm">Total Orders</span>
+        <EllipsisVertical size={20} className="text-white" />
+      </div>
+      <div className="flex flex-col gap-1 text-sm">
+        <p>Since last week</p>
+        <div className="text-sm flex items-center justify-between gap-20">
+          <p className="text-white text-2xl font-semibold ">2,430</p>
+          <span className="flex gap-1 items-center text-secondary-500 text-sm px-2 bg-green-100 rounded-full">
+            <TrendingUp size={16} /> +2.7%
+          </span>
+        </div>
+        <p>Revenue Generated: $15,000</p>
+      </div>
+    </div>
+  );
+}
+
+export function SalesCard() {
+  return (
+    <div className="flex flex-col w-2/3 rounded-xl bg-secondary-500 p-4 text-white">
+      <div className="flex items-center justify-between mb-8 gap-8">
+        <span className="flex gap-1 items-center text-sm">Antibiotics</span>
+        <EllipsisVertical size={20} className="text-white" />
+      </div>
+      <div className="text-sm flex items-center justify-between">
+        <p className="text-white text-2xl font-semibold">$122,400</p>
+      </div>
+      <div className="flex items-center gap-1 mt-2 text-sm mr-4">
+        <span className="flex gap-1 items-center text-secondary-500 text-sm px-2 bg-green-100 rounded-full">
+          <TrendingUp size={16} /> +2%
+        </span>
+        <p className="text-nowrap">Since last week</p>
+      </div>
+    </div>
+  );
+}
