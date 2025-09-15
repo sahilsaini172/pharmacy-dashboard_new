@@ -1,4 +1,3 @@
-import Image from "next/image";
 export default function List() {
   return (
     <div className="flex flex-col mx-4 p-4 rounded-xl bg-white shadow-sm">

@@ -69,7 +69,7 @@ interface Barprops {
 
 export function Bar({ id, value }: Barprops) {
   const [isHovered, setIsHovered] = useState(false);
-  let percentage = (value / 25000) * 200;
+  const percentage = (value / 25000) * 200;
   return (
     <div
       key={id}

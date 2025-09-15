@@ -129,7 +129,7 @@ export function Bar({
   category,
   img,
 }: Barprops) {
-  let percentage = (value / 100000) * 300;
+  const percentage = (value / 100000) * 300;
   const color = () => {
     switch (category) {
       case "chemical":
