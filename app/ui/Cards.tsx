@@ -1,10 +1,12 @@
 import {
+  CircleCheck,
   CircleDollarSign,
   EllipsisVertical,
   Package,
   Pill,
   TrendingUp,
   TriangleAlert,
+  Users,
   X,
 } from "lucide-react";
 
@@ -133,6 +135,56 @@ export function SalesCard() {
           <TrendingUp size={16} /> +2%
         </span>
         <p className="text-nowrap">Since last week</p>
+      </div>
+    </div>
+  );
+}
+
+export function CustomerCard() {
+  return (
+    <div className="flex gap-4 w-fit items-center rounded-xl bg-secondary-500 p-4 text-white">
+      <span className="flex items-center justify-center p-2 rounded-full bg-primary-500">
+        <Users size={24} className="text-secondary-500" />
+      </span>
+      <div className="flex flex-1 flex-col ">
+        <div className="flex items-center justify-between mb-8 gap-8">
+          <span className="flex gap-1 items-center text-sm">Antibiotics</span>
+          <EllipsisVertical size={20} className="text-white" />
+        </div>
+        <div className="text-sm flex items-center justify-between">
+          <p className="text-white text-2xl font-semibold">$122,400</p>
+        </div>
+        <div className="flex items-center gap-1 mt-2 text-sm mr-4">
+          <span className="flex gap-1 items-center text-secondary-500 text-sm px-2 bg-green-100 rounded-full">
+            <TrendingUp size={16} /> +2%
+          </span>
+          <p className="text-nowrap">Since last week</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function PaymentCard() {
+  return (
+    <div className="flex gap-4 w-fit items-center rounded-xl bg-white p-4 text-black">
+      <span className="flex items-center justify-center p-2 rounded-full bg-green-100">
+        <CircleCheck size={24} className="text-green-500" />
+      </span>
+      <div className="flex flex-1 flex-col ">
+        <div className="flex items-center justify-between mb-8 gap-8">
+          <span className="flex gap-1 items-center text-sm font-medium">
+            Completed Payments
+          </span>
+          <EllipsisVertical size={20} />
+        </div>
+        <div className="text-sm flex-col flex">
+          <p>Since last week</p>
+          <p className="text-2xl font-semibold">122</p>
+          <p>
+            Revenue: <span className="font-semibold">$23,234</span>
+          </p>
+        </div>
       </div>
     </div>
   );

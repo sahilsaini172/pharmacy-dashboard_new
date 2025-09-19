@@ -5,9 +5,11 @@ import {
   ChartSpline,
   ChevronDown,
   CircleDollarSign,
+  GitCompareArrows,
   LayoutDashboard,
   Menu,
   Package,
+  Settings,
   ShoppingCart,
   Users,
   X,
@@ -85,6 +87,19 @@ function MenuOpen({ onClick }: MenuOpenProp) {
             </Link>
           );
         })}
+        <Link
+          onClick={onClick}
+          key="settings"
+          href="/settings"
+          className={`flex gap-2 items-center text-sm font-light py-2 px-2 rounded-lg mt-8 ${
+            pathname == "/settings"
+              ? "bg-primary-500 text-secondary-500 font-medium"
+              : "hover:bg-primary-100"
+          }`}
+        >
+          <Settings size={16} />
+          <p>Settings</p>
+        </Link>
       </div>
     </div>
   );
